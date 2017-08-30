@@ -33,6 +33,9 @@ class Rpm
         rpmc = counter * 60;
         counter = 0;
         sendTwoBytes(rpmc);
+
+        if (rpmc<=0) digitalWrite(LED, HIGH);
+        else digitalWrite(LED, LOW);
         return;
       }
 

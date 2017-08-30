@@ -1,5 +1,8 @@
 // RPM counter by Andrea BIanchi (Aug 2017)
 
+int LED = 1;
+
+
 #include <TinyWireM.h>
 
 // Helper functions
