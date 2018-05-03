@@ -23,7 +23,7 @@ class Rpm
     void update ()
     {
       long adelta = analogRead(signalPin) - analogRead(refPin);
-            
+      
       if (abs(adelta) < THRESHOLD) return;
       int dt = millis() - startTime;
 
@@ -32,7 +32,7 @@ class Rpm
         startTime = millis();
         rpmc = counter * 60;
         counter = 0;
-        sendTwoBytes(rpmc);
+        //sendTwoBytes(rpmc);
 
         if (rpmc<=0) digitalWrite(LED, HIGH);
         else digitalWrite(LED, LOW);
@@ -40,6 +40,8 @@ class Rpm
       }
 
       int v = (adelta < 0) ? 1 : 0;
+      sendTwoBytes(v);
+      
       if (previous == 0 && v == 1) counter++;
       previous = v;
 
