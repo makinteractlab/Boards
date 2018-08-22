@@ -1,2 +1,2 @@
 # Boards
-Various boards projects
+Various boards projects by MAKinteract lab.
