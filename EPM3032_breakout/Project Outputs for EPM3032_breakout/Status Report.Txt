@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [EPM3032_breakout.PcbDoc]
+   Generated File[EPM3032_breakout.TXT]
+   Generated File[EPM3032_breakout.LDP]
+   Generated File[EPM3032_breakout.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:05:37 AM On 1/10/2020
